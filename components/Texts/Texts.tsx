@@ -5,7 +5,7 @@ export const Texts: React.FC = () => {
     return (
         <View>
             <Text>Hello</Text>
-            <Text>Storybook</Text>
+            <Text>Sortybuk</Text>
         </View>
     );
 }

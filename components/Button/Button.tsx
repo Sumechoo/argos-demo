@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'purple',
   },
   buttonText: {
-    color: 'white',
+    color: 'red',
     fontSize: 16,
     fontWeight: 'bold',
   },
@@ -35,7 +35,7 @@ export const MyButton = ({text, onPress, color, textColor}: ButtonProps) => (
       onPress={onPress}
       activeOpacity={0.8}>
       <Text style={[styles.buttonText, !!textColor && {color: textColor}]}>
-        {text}
+        {text} Demo change on button
       </Text>
     </TouchableOpacity>
   </View>

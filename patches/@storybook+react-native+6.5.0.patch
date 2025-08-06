@@ -1,0 +1,22 @@
+diff --git a/node_modules/@storybook/react-native/dist/index.js b/node_modules/@storybook/react-native/dist/index.js
+index f9993a8..915f3f8 100644
+--- a/node_modules/@storybook/react-native/dist/index.js
++++ b/node_modules/@storybook/react-native/dist/index.js
+@@ -1,7 +1,7 @@
+ var _a;
+ import { start } from './preview/start';
+ const { clientApi, configure, view } = start();
+-export { configure };
++export { configure, clientApi };
+ const rawStoriesOf = clientApi.storiesOf.bind(clientApi);
+ export const setAddon = clientApi.setAddon.bind(clientApi);
+ export const addDecorator = clientApi.addDecorator.bind(clientApi);
+@@ -11,6 +11,8 @@ export const addArgTypesEnhancer = clientApi.addArgTypesEnhancer.bind(clientApi)
+ export const clearDecorators = clientApi.clearDecorators.bind(clientApi);
+ export const getStorybook = clientApi.getStorybook.bind(clientApi);
+ export const raw = clientApi.raw.bind(clientApi);
++export const store = clientApi.storyStore;
++export const View = view;
+ export const storiesOf = (kind, _module) => rawStoriesOf(kind, { hot: () => { } }).addParameters({
+     framework: 'react-native',
+ });
